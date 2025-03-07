@@ -9,6 +9,7 @@
             background-image: url('temple4.jpg'); /* Replace with your temple image */
             background-size: cover;
             background-position: center;
+            background-attachment: fixed;
             margin: 0;
             font-family: Arial, sans-serif;
             color: rgb(40, 11, 204);
@@ -44,6 +45,8 @@
             align-items: center;
             margin-top: 20px;
             padding: 20px;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 10px;
         }
         .top-section {
             display: flex;
@@ -71,6 +74,11 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
+            body {
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: top center;
+            }
             .navbar {
                 display: none;
                 flex-direction: column;
@@ -90,8 +98,12 @@
                 flex-direction: column;
                 align-items: center;
             }
-            .content {
+            .container {
                 width: 90%;
+                padding: 15px;
+            }
+            .content {
+                width: 95%;
             }
         }
     </style>
